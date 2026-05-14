@@ -1,0 +1,4 @@
+[
+  { "u": "standard_user", "p": "secret_sauce" },
+  { "u": "locked_out_user", "p": "secret_sauce" }
+]
