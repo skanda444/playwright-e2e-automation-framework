@@ -1,0 +1,33 @@
+Starting test...
+Opening URL: https://www.saucedemo.com/
+Opening URL: https://www.saucedemo.com/
+[OrderFlow] Existing session missing, performing login fallback
+[LOG]: Logging in with user: standard_user
+[LoginPage] Submitting login form
+[LoginPage] Login form submitted, current URL: https://www.saucedemo.com/inventory.html
+[OrderFlow] Authenticated session ready on inventory page
+[OrderFlow] Step 2: Add backpack start
+[LOG]: Adding backpack to cart
+[InventoryPage] Clicking add-to-cart for backpack
+[OrderFlow] Step 2: Add backpack success
+[OrderFlow] Step 3: Open cart start
+[LOG]: Opening cart
+[InventoryPage] Opening cart from inventory page
+[OrderFlow] Step 3: Open cart success
+[OrderFlow] Step 4: Verify product start
+[CartPage] Verifying backpack is present in cart
+[OrderFlow] Step 4: Verify product success
+[OrderFlow] Step 5: Checkout start
+[CartPage] Clicking checkout
+[OrderFlow] Step 5: Checkout success
+[OrderFlow] Step 6: Fill details start
+[CheckoutPage] Filling checkout details
+[CheckoutPage] Filling checkout details with dynamic data
+[OrderFlow] Step 6: Fill details success
+[OrderFlow] Step 7: Finish order start
+[CheckoutPage] Clicking continue
+[CheckoutPage] Clicking finish
+[OrderFlow] Step 7: Finish order success
+[OrderFlow] Step 8: Verify success start
+[OrderFlow] Step 8: Verify success complete
+Test completed...

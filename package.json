@@ -6,7 +6,11 @@
     "test:qa": "cross-env TEST_ENV=qa playwright test",
     "test:uat": "cross-env TEST_ENV=uat playwright test",
     "test:prod": "cross-env TEST_ENV=prod playwright test",
-    "test": "playwright test"
+    "test": "playwright test",
+    "test:ci": "cross-env CI=true playwright test --reporter=list,html",
+    "docker:build": "docker build -t playwright-project:latest .",
+    "docker:run": "docker run --rm -e CI=true -e TEST_ENV=qa -v ${PWD}:/home/pwuser/app -w /home/pwuser/app -v /dev/shm:/dev/shm playwright-project:latest",
+    "test:docker": "npm run docker:build && npm run docker:run"
   },
   "keywords": [],
   "author": "",

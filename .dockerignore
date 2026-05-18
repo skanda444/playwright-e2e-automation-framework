@@ -1,0 +1,15 @@
+node_modules
+/.git
+playwright-report
+allure-report
+allure-results
+.vscode
+.idea
+.DS_Store
+npm-debug.log
+dist
+coverage
+*.tgz
+/.env
+Dockerfile
+.dockerignore

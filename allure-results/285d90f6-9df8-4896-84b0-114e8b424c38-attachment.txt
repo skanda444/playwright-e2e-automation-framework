@@ -1,0 +1,26 @@
+Opening URL: https://www.saucedemo.com/
+[CheckoutDataAPI] Creating API test data for enterprise-hybrid-checkout
+[CheckoutDataAPI] Created API test data with id 101
+[HybridWorkflow] Opening application and validating authenticated state
+Opening URL: https://www.saucedemo.com/
+[HybridWorkflow] Session missing, logging in with configured credentials
+[LOG]: Logging in with user: standard_user
+[LoginPage] Submitting login form
+[LoginPage] Login form submitted, current URL: https://www.saucedemo.com/inventory.html
+[HybridWorkflow] Inventory page is ready for UI validation
+[HybridWorkflow] Adding backpack to the cart
+[LOG]: Adding backpack to cart
+[InventoryPage] Clicking add-to-cart for backpack
+[HybridWorkflow] Opening cart and verifying line item
+[LOG]: Opening cart
+[InventoryPage] Opening cart from inventory page
+[CartPage] Verifying backpack is present in cart
+[HybridWorkflow] Navigating to checkout
+[CartPage] Clicking checkout
+[CheckoutPage] Filling checkout details with dynamic data
+[HybridWorkflow] Checkout form values match the API-created data
+[CheckoutPage] Clicking continue
+[CheckoutPage] Clicking finish
+[HybridWorkflow] End-to-end hybrid flow completed successfully
+[CheckoutDataAPI] Cleaning up API test data id 101
+[CheckoutDataAPI] Cleanup completed for id 101

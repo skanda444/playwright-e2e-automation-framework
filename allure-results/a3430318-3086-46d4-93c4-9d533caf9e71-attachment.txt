@@ -1,0 +1,10 @@
+[AuthSetup] Opening login page: https://www.saucedemo.com/
+Opening URL: https://www.saucedemo.com/
+[AuthSetup] Login page ready at https://www.saucedemo.com/
+[AuthSetup] Logging in as standard_user
+[LOG]: Logging in with user: standard_user
+[LoginPage] Submitting login form
+[LoginPage] Login form submitted, current URL: https://www.saucedemo.com/inventory.html
+[AuthSetup] Inventory URL confirmed: https://www.saucedemo.com/inventory.html
+[AuthSetup] Saving authenticated storage state to C:\Users\Hi\OneDrive\Desktop\Playwright Project\playwright\.auth\user.json
+[AuthSetup] Storage state saved successfully

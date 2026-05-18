@@ -1,4 +1,5 @@
 import { test, expect } from '../fixtures/baseTest';
+import { ENV } from '../utils/env';
 
 test.beforeEach(async () => {
 
@@ -21,18 +22,21 @@ test('Complete Order Flow @smoke', async ({
   checkoutPage
 
 }) => {
+  await test.step('Ensure authenticated session', async () => {
+    await loginPage.goto();
 
-  const username = 'standard_user';
-  const password = 'secret_sauce';
+    const loginFieldVisible = await page
+      .locator('#user-name')
+      .isVisible({ timeout: 2000 })
+      .catch(() => false);
 
-  console.log('[OrderFlow] Using username:', username);
-  console.log('[OrderFlow] Password provided:', Boolean(password));
+    if (loginFieldVisible) {
+      console.log('[OrderFlow] Existing session missing, performing login fallback');
+      await loginPage.login(ENV.USERNAME, ENV.PASSWORD);
+    }
 
-  await test.step('Login', async () => {
-    console.log('[OrderFlow] Step 1: Login start');
-    await loginPage.login(username, password);
     await expect(page).toHaveURL(/inventory/);
-    console.log('[OrderFlow] Step 1: Login success, inventory page loaded');
+    console.log('[OrderFlow] Authenticated session ready on inventory page');
   });
 
   await test.step('Add backpack to cart', async () => {

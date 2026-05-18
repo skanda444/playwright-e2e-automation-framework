@@ -1,0 +1,4 @@
+Opening URL: https://www.saucedemo.com/
+[LOG]: Logging in with user: locked_out_user
+[LoginPage] Submitting login form
+[LoginPage] Login form submitted, current URL: https://www.saucedemo.com/

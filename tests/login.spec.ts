@@ -1,6 +1,8 @@
 import { test, expect } from '../fixtures/baseTest';
 import data from '../data/login.json';
 
+test.use({ storageState: { cookies: [], origins: [] } });
+
 for (const d of data) {
   test(`Login test for ${d.u}`, async ({ loginPage, page }) => {
 

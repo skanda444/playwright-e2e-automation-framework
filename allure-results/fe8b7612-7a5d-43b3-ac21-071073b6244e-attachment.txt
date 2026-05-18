@@ -1,0 +1,2 @@
+Opening URL: https://www.saucedemo.com/
+[LOG]: Logging in with user: Hi

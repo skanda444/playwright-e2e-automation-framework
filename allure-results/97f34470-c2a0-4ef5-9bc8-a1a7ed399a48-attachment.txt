@@ -1,0 +1,9 @@
+[AuthSetup] Opening login page: https://www.saucedemo.com/
+Opening URL: https://www.saucedemo.com/
+[AuthSetup] Login page ready at https://www.saucedemo.com/
+[AuthSetup] Logging in as Hi
+[LOG]: Logging in with user: Hi
+[LoginPage] Submitting login form
+[LoginPage] Login form submitted, current URL: https://www.saucedemo.com/
+[AuthSetup] Inventory URL check did not pass: https://www.saucedemo.com/
+[AuthSetup] Waiting for inventory content as the authoritative ready signal
